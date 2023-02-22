@@ -150,16 +150,48 @@ F1:CK -> U6:A1 -> U7:A1 -> F2:D
 ![image](https://user-images.githubusercontent.com/83442608/220561604-f0d6d381-4c78-47dc-9bf5-9387f2b68f1a.png)
 
 # Lab 5
+Common Path Pessimism Removal(CPPR) Common path pessimism removal (CPPR) is the removal of artificially-induced pessimism between a launch and capture flip-flop pair during timing analysis by identifying the common clock path between launch and capture clock paths.
 
 ## Timing Report before CPPR
+
+> cd lab4
+> sta run.tcl –exit | tee out.txt
+
 ![image](https://user-images.githubusercontent.com/83442608/220659775-dbb7b80f-fb04-4cb9-865c-d2deb670c443.png)
 
 ## Timing Report after CPPR
 
+‘c2’ is node which requires CPPR
+Now change (following from 0 to 1)
+
 > set sta_crpr_enabled 1
 
+![image](https://user-images.githubusercontent.com/83442608/220689726-dbfb6a11-b8d1-49d7-b4d5-f754b767d93d.png)
 
+![image](https://user-images.githubusercontent.com/83442608/220689918-d8d85f76-eebf-44cd-902d-03acddebf430.png)
 
+## ECO – Engineering Change Order
+In the ECO cycle, we perform various analysis one by one for every check which we need to close but not closed till PnR stage. There are specialized signoff tools that help us to analyze the issue and also suggest the changes we need to do in order to close the issue. The suggested change is captured in an eco file.
+
+Commands
+> cd lab5
+> run.tcl
+
+![image](https://user-images.githubusercontent.com/83442608/220690264-3fc81b72-dea9-4f0e-b753-c111cc7c8542.png)
+
+Run tcl
+>  sta run.tcl –exit | tee run.log 
+
+## EXERCISE
+
+1. Open Verilog file s27_eco.v, what differences you find compared to s27.v
+In a s27_eco.v file (verilog design code) an extra clk buffer_x3 u16 is added to design.
+
+![image](https://user-images.githubusercontent.com/83442608/220696112-a31be738-b592-4f4c-a133-1a47d113467b.png)
+
+2. Observe the change in slack values at timing report
+
+![image](https://user-images.githubusercontent.com/83442608/220698798-a5b63fbb-1e8b-4b3c-983d-353bdf9327bf.png)
 
 
 
