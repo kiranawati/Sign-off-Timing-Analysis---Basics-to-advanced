@@ -85,6 +85,9 @@ Change the number of paths being reported to 100
 
 * Analyze each path in detail and understand
 
+![image](https://user-images.githubusercontent.com/83442608/220655451-b1580e03-3eb2-4b11-a9e1-e1d08628ddd0.png)
+
+
 ## Path 1
 F1:CK -> U6 -> U4 -> U5:A1 -> U7:A2 -> F2:D
 
@@ -145,6 +148,19 @@ F1:CK -> U6:A1 -> U7:A1 -> F2:D
 ![image](https://user-images.githubusercontent.com/83442608/220561523-1d0792a1-f665-4fe1-8dac-dac00db53ce1.png)
 
 ![image](https://user-images.githubusercontent.com/83442608/220561604-f0d6d381-4c78-47dc-9bf5-9387f2b68f1a.png)
+
+# Lab 5
+
+## Timing Report before CPPR
+![image](https://user-images.githubusercontent.com/83442608/220659775-dbb7b80f-fb04-4cb9-865c-d2deb670c443.png)
+
+## Timing Report after CPPR
+
+> set sta_crpr_enabled 1
+
+
+
+
 
 
 
