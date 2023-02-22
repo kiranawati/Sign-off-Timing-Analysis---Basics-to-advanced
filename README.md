@@ -152,6 +152,9 @@ F1:CK -> U6:A1 -> U7:A1 -> F2:D
 # Lab 5
 Common Path Pessimism Removal(CPPR) Common path pessimism removal (CPPR) is the removal of artificially-induced pessimism between a launch and capture flip-flop pair during timing analysis by identifying the common clock path between launch and capture clock paths.
 
+![image](https://user-images.githubusercontent.com/83442608/220700666-f0659b1f-63a9-4af5-9d14-dce4816112ea.png)
+
+
 ## Timing Report before CPPR
 
 > cd lab4
