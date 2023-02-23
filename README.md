@@ -199,6 +199,19 @@ In a s27_eco.v file (verilog design code) an extra clk buffer_x3 u16 is added to
 
 ![image](https://user-images.githubusercontent.com/83442608/220698798-a5b63fbb-1e8b-4b3c-983d-353bdf9327bf.png)
 
+# References :
 
+1. https://vsdiat.com/
 
+2. OpenSTA Manual
+
+3. https://github.com/The-OpenROAD-Project/OpenSTA
+
+4. https://www.synopsys.com/glossary/what-is-static-timing-analysis.html
+
+# Acknowledgements :
+
+1. Vikas Sachdeva, Advisor, Tech and VLSI Coach, Trainer and Innovator at vlsideepdive.
+
+2. Kunal Ghosh, Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
 
