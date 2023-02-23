@@ -53,6 +53,9 @@ Following the command use to run OpenSTA
 ![image](https://user-images.githubusercontent.com/83442608/220546337-25cf6bd3-b6f8-4821-b5ed-e57fbfe9116b.png)
 ![image](https://user-images.githubusercontent.com/83442608/220546572-34b33c80-c988-4c1f-bc6f-372b43fbedfe.png)
 
+## 4. What is the difference between ‘simple_max.lib’ and ‘simple_min.lib’
+On comparing simple_max.lib and simple_min.lib file it is observed that parameter like delay, fall_transition , cell_rise , rise_transition, cell_fall etc is different in both the files. In simple_max.lib file maximum value is defined for all the parameters while in simple_min.lib minimum value is defined .
+
 ## Spef Files
 Standard Parasitic Exchange Format(SPEF) file describe parasitic information w.r.t design
 
